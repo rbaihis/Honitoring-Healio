@@ -1,6 +1,9 @@
 
 # Log analytics choice
 
+- [Home](README.md)
+- [Metrics](metrics/ReadMe.md)
+
 ## Analogy:
 ![Analogy](attatchments/analogy.png)
 
@@ -118,4 +121,8 @@ This document provides a detailed comparison between **ELK (Elasticsearch, Logst
 ## Final Decision
 For enterprises requiring **full-featured log analytics**, ELK is the best option. However, for **cost-effective, scalable log collection** in cloud-native environments, **PLG is the superior choice** due to its efficient storage and integration with Prometheus.
 
+---
+
+- [Home](README.md)
+- [Metrics](metrics/ReadMe.md)
 
