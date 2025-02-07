@@ -1,6 +1,10 @@
 # Prometheus vs Zabbix vs Netdata Comparison
-
 This document provides a detailed comparison between **Prometheus**, **Zabbix**, and **Netdata**, three popular open-source monitoring solutions.
+<br>
+- [Home](README.md)
+- [Logs](logs/ReadMe.md)
+
+
 
 | Feature | Prometheus | Zabbix | Netdata |
 |---------|-----------|--------|---------|
@@ -108,4 +112,6 @@ To ensure the monitoring stack remains stable and secure, the following measures
 
 This configuration ensures a well-balanced and resource-efficient monitoring setup for your application stack. 🚀
 
-
+---
+- [Home](README.md)
+- [Logs](logs/ReadMe.md)
