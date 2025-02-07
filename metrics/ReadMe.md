@@ -63,3 +63,49 @@ Considering enterprise requirements, scalability, and existing technology stack 
 
 ## Final Justification  
 Given the enterprise's Odoo-based framework, PostgreSQL, Nginx, and Node.js stack, **Prometheus is the best choice** due to its flexibility, seamless integrations, scalability, and cost-effectiveness compared to alternatives like Zabbix. 🚀
+
+
+---
+
+## Estimated Resource Requirements for Monitoring Stack on a Single Node
+| Resource         | Estimated Requirement |
+|-----------------|----------------------|
+| **CPU**         | 4-6 vCPUs (depending on data ingestion rate) |
+| **RAM**         | 8-16 GB RAM (Prometheus requires significant memory for high retention) |
+| **Disk (Storage)** | 200-300 GB (Prometheus TSDB + logs from exporters) |
+| **Bandwidth (Network I/O)** | 5-10 Mbps average (can spike depending on scrape intervals) |
+
+## Breakdown of Resource Usage per Component
+| Component                     | CPU         | RAM                | Disk        | Network I/O |
+|--------------------------------|------------|--------------------|-------------|-------------|
+| **Prometheus (Time-Series DB)** | 2-4 vCPUs  | 6-12 GB            | 150-200 GB  | Moderate (depends on scrape interval) |
+| **Grafana (Visualization)**    | 0.5-1 vCPU | 1-2 GB             | 5 GB        | Low         |
+| **Alertmanager**               | 0.5 vCPU   | 512 MB             | <1 GB       | Low         |
+| **PostgreSQL Exporter**        | 0.5 vCPU   | 512 MB             | <1 GB       | Low         |
+| **Odoo Exporter (Custom or Official)** | 0.5 vCPU | 512 MB - 1 GB | <1 GB       | Low         |
+| **Nginx & Node.js Exporters**  | 0.5 vCPU   | 256-512 MB         | <1 GB       | Low         |
+| **Node Exporter (System Metrics)** | 0.5 vCPU | 256 MB        | <1 GB       | Low         |
+| **Docker Exporter (cAdvisor or similar)** | 0.5-1 vCPU | 512 MB - 1 GB | <1 GB | Moderate |
+
+## Key Considerations
+- **Prometheus Memory Usage**: Increases with scrape intervals and active time-series. A **high retention (60 days)** setup requires **at least 8-12 GB RAM**.
+- **Disk Storage**: **Prometheus stores data in TSDB blocks**, which grow significantly over time. Logs from **exporters** also add up.
+- **Network Impact**: Scraping data every **15s to 1m** results in moderate network traffic (~5-10 Mbps).
+- **CPU Scaling**: If scrape intervals are lower (**every 5s**), CPU usage will increase.
+
+## Final Recommendations
+1. **Minimum Setup**: 4 vCPUs, 8 GB RAM, 200 GB Disk, 5 Mbps Network
+2. **Recommended Setup (Better Stability)**: 6 vCPUs, 16 GB RAM, 300 GB Disk, 10 Mbps Network  
+
+## Protection Measures Implemented
+To ensure the monitoring stack remains stable and secure, the following measures have been applied:
+- **Data Retention Policy**: Logs retained for 60 days with automatic cleanup to prevent excessive storage consumption.
+- **Prometheus Configuration**: Optimized scrape intervals to balance between real-time monitoring and resource efficiency.
+- **Grafana Authentication**: Configured with role-based access control (RBAC) to restrict unauthorized access.
+- **Alertmanager Setup**: Ensures proactive issue detection with alerting rules based on critical system metrics.
+- **Exporter Efficiency**: Exporters configured to minimize redundant data collection and optimize performance.
+- **Disk and Memory Monitoring**: Alerts set up for high disk usage and memory pressure to prevent crashes.
+
+This configuration ensures a well-balanced and resource-efficient monitoring setup for your application stack. 🚀
+
+
