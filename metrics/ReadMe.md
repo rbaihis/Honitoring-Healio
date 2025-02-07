@@ -5,6 +5,7 @@ This document provides a detailed comparison between **Prometheus**, **Zabbix**,
 - [Logs](logs/ReadMe.md)
 
 
+---
 
 | Feature | Prometheus | Zabbix | Netdata |
 |---------|-----------|--------|---------|
