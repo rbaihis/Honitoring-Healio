@@ -1,3 +1,3 @@
 # Monitoring Choice:
-[Metrics Monitoring](metrics/README.md)
-[Logs Monitoring](logs/README.md)
+- [Metrics Monitoring](metrics/ReadMe.md)
+- [Logs Monitoring](logs/ReadMe.md)
