@@ -16,12 +16,12 @@
   - **PLG (Promtail, Loki, Grafana)** *(Scenario 1)*
   - **ELK (Elasticsearch, Logstash, Kibana)** *(Scenario 2)*
 - **Exporters**:
-  - Odoo exporter or custom exporter (1 instance with 2 databases)
-  - PostgreSQL exporter (1 instance hosting 2 databases)
-  - Nginx exporter
-  - Node.js custom proxy exporter
-  - Node exporter (system metrics)
-  - Docker exporter (cAdvisor or similar)
+  - Odoo exporter or custom exporter (1 instance with 2 databases)*2
+  - PostgreSQL exporter (1 instance hosting 2 databases)*2
+  - Nginx exporter*2
+  - Node.js custom proxy exporter*2
+  - Node exporter (system metrics)*2
+  - Docker exporter (cAdvisor or similar)*2
 - **User Activity**:
   - **Backoffice Usage**: 8-9 hours per day
   - **End-User Access**: 12 hours per day (checking balance, refunds, etc.)
@@ -114,5 +114,4 @@ To ensure the monitoring stack remains stable and secure, the following measures
 - **ELK Stack** provides advanced search and indexing but is resource-intensive.
 - **For resource-constrained environments, PLG is preferred. For heavy log analysis, ELK is recommended.**
 
-Would you like to adjust any parameters, such as retention period or scrape intervals, for a finer calculation? 🚀
 
