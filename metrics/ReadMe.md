@@ -1,8 +1,8 @@
 # Prometheus vs Zabbix vs Netdata Comparison
 
-- [Home](README.md)
-- [Metrics - Tools](metrics/ReadMe.md)
-- [Logs - Tools](logs/ReadMe.md)
+- [Home](/README.md)
+- [Metrics - Tools](/metrics/ReadMe.md)
+- [Logs - Tools](/logs/ReadMe.md)
 
 
 ---
