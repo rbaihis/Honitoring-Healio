@@ -1,8 +1,9 @@
 
 # Log analytics choice
 
-- [Home](README.md)
-- [Metrics](metrics/ReadMe.md)
+- [Home](/README.md)
+- [Metrics - Tools](/metrics/ReadMe.md)
+- [Logs - Tools](/logs/ReadMe.md)
 ---
 
 ## Analogy:
@@ -124,6 +125,7 @@ For enterprises requiring **full-featured log analytics**, ELK is the best optio
 
 ---
 
-- [Home](README.md)
-- [Metrics](metrics/ReadMe.md)
+- [Home](/README.md)
+- [Metrics - Tools](/metrics/ReadMe.md)
+- [Logs - Tools](/logs/ReadMe.md)
 
