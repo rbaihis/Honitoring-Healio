@@ -2,6 +2,7 @@
 This document provides a detailed comparison between **Prometheus**, **Zabbix**, and **Netdata**, three popular open-source monitoring solutions.
 <br>
 - [Home](README.md)
+- [Metrics](metrics/ReadMe.md)
 - [Logs](logs/ReadMe.md)
 
 
