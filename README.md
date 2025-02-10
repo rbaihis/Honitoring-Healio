@@ -1,11 +1,11 @@
 # Resource Requirement For The Full Monitoring Solution:
 
-- [Home](/README.md)
+## Navigate For Details:
 - [Metrics Monitoring Details](/metrics/ReadMe.md)
 - [Logs Monitoring Detail](/logs/ReadMe.md)
 
-
-## Estimated Resource Requirements for Monitoring Stack on a Single Node
+---
+## Estimated Resource Requirements for Monitoring Stack on a Single Node(VPS)
 
 ### Considered Application Stack & Retention Policy
 
