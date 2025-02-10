@@ -1,7 +1,8 @@
-# Monitoring Choice:
-- [Metrics Monitoring](metrics/ReadMe.md)
-- [Logs Monitoring](logs/ReadMe.md)
+# Resource Requirement For The Full Monitoring Solution:
 
+- [Home](/README.md)
+- [Metrics Monitoring Details](/metrics/ReadMe.md)
+- [Logs Monitoring Detail](/logs/ReadMe.md)
 
 
 ## Estimated Resource Requirements for Monitoring Stack on a Single Node
