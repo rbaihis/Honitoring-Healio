@@ -116,4 +116,5 @@ This configuration ensures a well-balanced and resource-efficient monitoring set
 
 ---
 - [Home](README.md)
-- [Logs](logs/ReadMe.md)
+- [Metrics - Tools](metrics/ReadMe.md)
+- [Logs - Tools](logs/ReadMe.md)
