@@ -1,13 +1,17 @@
 # Prometheus vs Zabbix vs Netdata Comparison
-This document provides a detailed comparison between **Prometheus**, **Zabbix**, and **Netdata**, three popular open-source monitoring solutions.
-<br>
+
 - [Home](README.md)
-- [Metrics](metrics/ReadMe.md)
-- [Logs](logs/ReadMe.md)
+- [Metrics - Tools](metrics/ReadMe.md)
+- [Logs - Tools](logs/ReadMe.md)
 
 
 ---
+**Technolog Chosen**: `Prometheus`.
+</br>
+This document provides a detailed comparison between **Prometheus**, **Zabbix**, and **Netdata**, three popular open-source monitoring solutions.
+</br>
 
+## Brief Comparison
 | Feature | Prometheus | Zabbix | Netdata |
 |---------|-----------|--------|---------|
 | **Data Collection** | ✔ Pull-based (Prometheus scrapes targets) | ✘ Push-based (agents send data to server) | ✔ Real-time push-based, lightweight agents |
@@ -28,10 +32,6 @@ This document provides a detailed comparison between **Prometheus**, **Zabbix**,
 - **Zabbix is best for:** Traditional IT infrastructure, SNMP-based monitoring, and enterprise networks.
 - **Netdata is best for:** Lightweight real-time monitoring with minimal setup.
 
-## Summary
-- **Prometheus is best for:** Cloud-native environments, time-series monitoring, and Kubernetes.
-- **Zabbix is best for:** Traditional IT infrastructure, SNMP-based monitoring, and enterprise networks.
-- **Netdata is best for:** Lightweight real-time monitoring with minimal setup.
 
 ## Analogy of Chosen Tools
 ![Prometheus Analogy](attatchments/analogy_prometheus.png)
