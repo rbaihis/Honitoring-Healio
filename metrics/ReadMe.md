@@ -8,7 +8,7 @@
 ---
 **Technolog Chosen**: `Prometheus`.
 </br>
-This document provides a detailed comparison between **Prometheus**, **Zabbix**, and **Netdata**, three popular open-source monitoring solutions.
+Comparison between **Prometheus**, **Zabbix**, and **Netdata**, three popular open-source monitoring solutions.
 </br>
 
 ## Brief Comparison
@@ -26,11 +26,6 @@ This document provides a detailed comparison between **Prometheus**, **Zabbix**,
 | **Extensibility** | ✔ Extensive integrations, exporters | ✔ Many built-in templates | ✘ Fewer integrations available |
 | **Security** | ✘ Authentication and RBAC require extra setup | ✔ Built-in security features | ✘ Limited security controls |
 | **Best For** | Cloud-native, microservices, Kubernetes monitoring | Enterprise IT monitoring, SNMP, Windows/Linux systems | Real-time monitoring, lightweight deployments |
-
-## Summary
-- **Prometheus is best for:** Cloud-native environments, time-series monitoring, and Kubernetes.
-- **Zabbix is best for:** Traditional IT infrastructure, SNMP-based monitoring, and enterprise networks.
-- **Netdata is best for:** Lightweight real-time monitoring with minimal setup.
 
 
 ## Analogy of Chosen Tools
