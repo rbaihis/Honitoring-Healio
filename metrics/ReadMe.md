@@ -115,6 +115,6 @@ To ensure the monitoring stack remains stable and secure, the following measures
 This configuration ensures a well-balanced and resource-efficient monitoring setup for your application stack. 🚀
 
 ---
-- [Home](README.md)
-- [Metrics - Tools](metrics/ReadMe.md)
-- [Logs - Tools](logs/ReadMe.md)
+- [Home](/README.md)
+- [Metrics - Tools](/metrics/ReadMe.md)
+- [Logs - Tools](/logs/ReadMe.md)
